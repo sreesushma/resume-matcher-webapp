@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Matcher</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}"> 
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AI Resume ↔ Job Description Matcher</h1>
+
+    <form method="POST">
+    	<h3>Resume</h3>
+    	<textarea name="resume" rows="8">{{ resume_text }}</textarea>
+
+    	<h3>Job Description</h3>
+    	<textarea name="jd" rows="8">{{ jd_text }}</textarea>
+
+    	<button type="submit">Analyze Match</button>
+	<button type="button" onclick="clearForm()" class="clear-btn">Clear</button>
+
+    </form>
+
+
+    {% if score %}
+	<div id="results" class="results">
+    	<h2>Match Score: {{ score|round(2) }}%</h2>
+
+    	<h3>Matched Terms</h3>
+    	<ul>
+            {% for skill in matched %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+
+    	<h3>Missing Terms</h3>
+    	<ul>
+           {% for skill in missing %}
+           <li>{{ skill }}</li>
+           {% endfor %}
+    	</ul>
+    </div>
+    {% endif %}
+
+
+</div>
+
+<script>
+function clearForm() {
+  document.querySelector('textarea[name="resume"]').value = "";
+  document.querySelector('textarea[name="jd"]').value = "";
+
+  const results = document.getElementById("results");
+  if (results) {
+    results.style.display = "none";
+  }
+}
+</script>
+
+
+
+</body>
+
+</html>
