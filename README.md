@@ -73,7 +73,15 @@ pip install -r requirements.txt
 python app.py  
 
 ---
+## Application Preview
 
+### Input Interface
+<img width="1631" height="1005" alt="Screenshot (52)" src="https://github.com/user-attachments/assets/4d1ecd3a-a062-4fb5-a6f6-7cf876b6aa31" />
+
+### Analysis Results
+<img width="1703" height="1000" alt="Screenshot (53)" src="https://github.com/user-attachments/assets/c8659b58-2014-4f01-8114-9ef4773c200e" />
+
+---
 ## Future Improvements
 
 • PDF and DOC resume upload  
