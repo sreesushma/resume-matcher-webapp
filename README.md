@@ -67,6 +67,8 @@ The system identifies:
 
 ---
 ## System Architecture
+
+<pre>
 User Browser
 ↓
 Frontend (HTML/CSS)
@@ -80,38 +82,7 @@ TF-IDF Feature Extraction
 Cosine Similarity Engine
 ↓
 Match Score + Skill Insights
-
-<pre>
-User (Browser)
-      │
-      ▼
-Frontend Interface (HTML / CSS)
-      │
-      ▼
-Flask Web Server (Python)
-      │
-      ▼
-NLP Processing Pipeline
-  • Text Cleaning
-  • Tokenization
-  • Stopword Removal
-      │
-      ▼
-Feature Extraction
-  • TF-IDF Vectorization
-      │
-      ▼
-Similarity Engine
-  • Cosine Similarity
-      │
-      ▼
-Results Generation
-  • Match Score
-  • Matched Skills
-  • Missing Skills
-      │
-      ▼
-Response Rendered to User
+ 
 </pre>
 
 The system is deployed as a live web application and processes user input in real time.
