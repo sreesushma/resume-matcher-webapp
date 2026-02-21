@@ -1,6 +1,8 @@
 # AI Resume ↔ Job Description Matcher
 Live Application: https://resume-matcher-webapp.onrender.com
+
 Cloud Deployment: Render
+
 Built with: Python, Flask, NLP, TF-IDF, Cosine Similarity
 
 An interactive NLP application that evaluates how well a resume aligns with a job description using machine learning techniques. The system transforms unstructured text into measurable similarity insights to support data-driven hiring decisions.
