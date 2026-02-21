@@ -1,106 +1,128 @@
-# AI Resume ↔ Job Description Matcher
-Live Application: https://resume-matcher-webapp.onrender.com
+# AI Resume Matcher — NLP Web Application
 
-Cloud Deployment: Render
+A deployed machine learning web application that analyzes the similarity between a resume and a job description using Natural Language Processing (NLP).
 
-Built with: Python, Flask, NLP, TF-IDF, Cosine Similarity
+The system extracts meaningful terms, computes semantic similarity, and provides a match score along with matched and missing skills.
 
-An interactive NLP application that evaluates how well a resume aligns with a job description using machine learning techniques. The system transforms unstructured text into measurable similarity insights to support data-driven hiring decisions.
-
-🔗 Portfolio: https://sreesushma.github.io/ai-portfolio-sree/
-
+🔗 Live Application: https://resume-matcher-webapp.onrender.com
 
 ---
 
-## Overview
+## Problem
 
-Recruiters often manually compare resumes with job descriptions, which is time-consuming and subjective. This project introduces a data-driven approach to quantify candidate–role alignment using interpretable natural language processing techniques.
+Recruiters manually screen resumes by comparing them with job descriptions. This process is time-consuming, inconsistent, and difficult to scale.
 
-The application allows users to:
-✔ Paste resume and job description text  
-✔ Compute semantic similarity score  
-✔ Identify overlapping key terms  
-✔ Highlight missing terms from job description  
-✔ Visualize alignment insights  
+There is a need for an automated system that:
+- Evaluates resume relevance objectively
+- Identifies missing skill gaps
+- Provides fast and interpretable matching results
 
 ---
 
-## Tech Stack
+## Solution
 
-Python  
-Flask  
-scikit-learn  
-TF-IDF Vectorization  
-Cosine Similarity  
-HTML/CSS  
-Matplotlib  
+This project implements an end-to-end NLP pipeline that:
 
----
+1. Accepts resume text or PDF input
+2. Processes and cleans textual content
+3. Extracts important technical terms
+4. Computes similarity between resume and job description
+5. Displays a match score with insights
 
-## How It Works
-
-1️⃣ Text preprocessing and normalization  
-2️⃣ Feature extraction using TF-IDF vectorization  
-3️⃣ Semantic similarity computation using cosine similarity  
-4️⃣ Term importance comparison  
-5️⃣ Interpretable visual output generation  
+The application is deployed as a web interface accessible through a browser.
 
 ---
 
 ## Key Features
 
-• End-to-end NLP pipeline  
-• Interpretable machine learning outputs  
-• Interactive web interface  
-• Real-world decision support use case  
-• Clean modular architecture  
+✔ Resume text input or PDF upload  
+✔ Automated text preprocessing pipeline  
+✔ TF-IDF vectorization for feature extraction  
+✔ Cosine similarity scoring  
+✔ Matched vs Missing terms analysis  
+✔ Interactive web UI  
+✔ Cloud deployment
 
 ---
 
-## Project Structure
+## Machine Learning Pipeline
 
-resume-matcher-webapp  
-│ app.py  
-│ requirements.txt  
-│ README.md  
-│  
-├── templates  
-│   └── index.html  
-│  
-└── static  
-    └── style.css  
+### 1. Text Preprocessing
+- Lowercasing
+- Stopword removal
+- Tokenization
+- Noise filtering
+
+### 2. Feature Extraction
+TF-IDF vectorization converts textual content into numerical representations that capture term importance across documents.
+
+### 3. Similarity Computation
+Cosine similarity measures semantic closeness between resume and job description vectors.
+
+### 4. Insight Generation
+The system identifies:
+- Matched terms
+- Missing terms
+- Overall compatibility score
+
+---
+
+## System Architecture
+
+User Input → Flask Backend → NLP Processing → Similarity Engine → Results Display
 
 ---
 
-## Run Locally
+## Technology Stack
 
-pip install -r requirements.txt  
-python app.py  
+**Programming Language**
+- Python
+
+**Libraries**
+- Scikit-learn
+- Pandas
+- NumPy
+- Flask
+
+**NLP Techniques**
+- TF-IDF Vectorization
+- Cosine Similarity
+- Text Normalization
+
+**Deployment**
+- Cloud Web Hosting
 
 ---
-## Application Preview
 
-### Input Interface
-<img width="1631" height="1005" alt="Screenshot (52)" src="https://github.com/user-attachments/assets/4d1ecd3a-a062-4fb5-a6f6-7cf876b6aa31" />
+## How to Run Locally
 
-### Analysis Results
-<img width="1703" height="1000" alt="Screenshot (53)" src="https://github.com/user-attachments/assets/c8659b58-2014-4f01-8114-9ef4773c200e" />
+### 1. Clone Repository
+git clone https://github.com/your-username/your-repo-name.git
+
+### 2. Install Dependencies
+pip install -r requirements.txt
+
+### 3. Run Application
+python app.py
+
+### 4. Open in Browser
+http://localhost:5000
 
 ---
+
 ## Future Improvements
 
-• PDF and DOC resume upload  
-• Semantic embeddings using transformer models  
-• Skill ontology mapping  
-• Cloud deployment  
-• Model performance optimization  
+- Skill ontology for better term filtering
+- Semantic embeddings (BERT-based similarity)
+- Resume feedback suggestions
+- Job role classification
+- API endpoint for integration
+- Authentication and user history
 
 ---
 
 ## Author
 
 Sree Sushma Damineni  
-AI Engineer | Machine Learning Engineer  
-
-Master’s in Computer Science  
-University of Missouri–Kansas City
+M.S. Computer Science — Machine Learning Focus  
+Kansas City, Missouri
