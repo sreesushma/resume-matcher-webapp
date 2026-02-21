@@ -1,6 +1,6 @@
 # AI Resume Matcher — NLP Web Application
 
-A deployed machine learning web application that analyzes the similarity between a resume and a job description using Natural Language Processing (NLP).
+An end-to-end deployed NLP system that helps job seekers evaluate resume relevance and identify skill gaps instantly using Natural Language Processing (NLP).
 
 The system extracts meaningful terms, computes semantic similarity, and provides a match score along with matched and missing skills.
 
@@ -67,6 +67,19 @@ The system identifies:
 
 ---
 ## System Architecture
+User Browser
+↓
+Frontend (HTML/CSS)
+↓
+Flask Web Server
+↓
+NLP Processing Pipeline
+↓
+TF-IDF Feature Extraction
+↓
+Cosine Similarity Engine
+↓
+Match Score + Skill Insights
 
 <pre>
 User (Browser)
@@ -122,7 +135,7 @@ The system is deployed as a live web application and processes user input in rea
 - Text Normalization
 
 **Deployment**
-- Cloud Web Hosting
+- Render Cloud Platform
 
 ---
 
@@ -157,11 +170,11 @@ System displays match score, matched terms, and missing keywords.
 
 ## What This Project Demonstrates
 
-✔ End-to-end NLP pipeline from text input to insight generation  
-✔ Real-world application of TF-IDF and cosine similarity  
-✔ Interactive web deployment with user input handling  
-✔ Model evaluation and interpretability focus  
-✔ Practical AI system design inspired by industry workflows
+✔ Designing and deploying an end-to-end ML system  
+✔ Transforming raw text into actionable insights  
+✔ Building user-facing AI applications  
+✔ Applying NLP techniques to real-world workflows  
+✔ Bridging machine learning with product usability
 ---
 ## Future Improvements
 
@@ -179,3 +192,5 @@ System displays match score, matched terms, and missing keywords.
 Sree Sushma Damineni  
 M.S. Computer Science — Machine Learning Focus  
 Kansas City, Missouri
+Portfolio: https://sreesushma.github.io/ai-portfolio-sree/
+LinkedIn: https://www.linkedin.com/in/sree-sushma-damineni
