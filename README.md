@@ -66,39 +66,40 @@ The system identifies:
 - Overall compatibility score
 
 ---
-
 ## System Architecture
 
+<pre>
 User (Browser)
-        │
-        ▼
+      │
+      ▼
 Frontend Interface (HTML / CSS)
-        │
-        ▼
+      │
+      ▼
 Flask Web Server (Python)
-        │
-        ▼
+      │
+      ▼
 NLP Processing Pipeline
   • Text Cleaning
   • Tokenization
   • Stopword Removal
-        │
-        ▼
+      │
+      ▼
 Feature Extraction
   • TF-IDF Vectorization
-        │
-        ▼
+      │
+      ▼
 Similarity Engine
   • Cosine Similarity
-        │
-        ▼
+      │
+      ▼
 Results Generation
   • Match Score
   • Matched Skills
   • Missing Skills
-        │
-        ▼
+      │
+      ▼
 Response Rendered to User
+</pre>
 
 The system is deployed as a live web application and processes user input in real time.
 
@@ -154,6 +155,13 @@ System displays match score, matched terms, and missing keywords.
 
 <img width="1703" height="1000" alt="Match Results" src="https://github.com/user-attachments/assets/c8659b58-2014-4f01-8114-9ef4773c200e" />
 
+## What This Project Demonstrates
+
+✔ End-to-end NLP pipeline from text input to insight generation  
+✔ Real-world application of TF-IDF and cosine similarity  
+✔ Interactive web deployment with user input handling  
+✔ Model evaluation and interpretability focus  
+✔ Practical AI system design inspired by industry workflows
 ---
 ## Future Improvements
 
