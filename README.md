@@ -69,7 +69,38 @@ The system identifies:
 
 ## System Architecture
 
-User Input → Flask Backend → NLP Processing → Similarity Engine → Results Display
+User (Browser)
+        │
+        ▼
+Frontend Interface (HTML / CSS)
+        │
+        ▼
+Flask Web Server (Python)
+        │
+        ▼
+NLP Processing Pipeline
+  • Text Cleaning
+  • Tokenization
+  • Stopword Removal
+        │
+        ▼
+Feature Extraction
+  • TF-IDF Vectorization
+        │
+        ▼
+Similarity Engine
+  • Cosine Similarity
+        │
+        ▼
+Results Generation
+  • Match Score
+  • Matched Skills
+  • Missing Skills
+        │
+        ▼
+Response Rendered to User
+
+The system is deployed as a live web application and processes user input in real time.
 
 ---
 
