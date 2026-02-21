@@ -140,7 +140,21 @@ python app.py
 http://localhost:5000
 
 ---
+## Application Preview
 
+### Home Interface
+Upload or paste resume and job description to analyze compatibility.
+
+<img width="1631" height="1005" alt="Resume Matcher UI" src="https://github.com/user-attachments/assets/4d1ecd3a-a062-4fb5-a6f6-7cf876b6aa31" />
+
+---
+
+### Analysis Results
+System displays match score, matched terms, and missing keywords.
+
+<img width="1703" height="1000" alt="Match Results" src="https://github.com/user-attachments/assets/c8659b58-2014-4f01-8114-9ef4773c200e" />
+
+---
 ## Future Improvements
 
 - Skill ontology for better term filtering
